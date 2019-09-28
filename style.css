@@ -6,12 +6,16 @@
 
 body{
     text-align: center;
+    display: inline-block;
 }
 
 h1{
     font-family: 'Creepster', cursive;
     z-index: 2;
     position: relative;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    font-weight: lighter;
 }
 
 img{
@@ -19,4 +23,14 @@ img{
     height: 100px;
     position: relative;
     z-index: 1;
+}
+
+div>button{
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    padding: 1rem;
+    color: whitesmoke;
+    font-family: 'Creeper', serif;
+    left: 200px;
 }
