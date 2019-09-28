@@ -18,12 +18,18 @@ h1 {
   font-weight: lighter;
 }
 
+img.backgroundimage {
+    z-index: -1;
+    position: relative;
+}
+
 img {
   width: 100px;
   height: 100px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
+
 
 button {
   position: absolute;
@@ -38,10 +44,13 @@ button {
   font-size: 18px;
   cursor: pointer;
   top: -0.01rem;
+  z-index: 2;
 }
 
 span {
-    color: blue;
+    color: whitesmoke;
     font-size: 1.25rem;
-    font-family: 'Creeper', serif;    
+    font-family: 'Creeper', serif; 
+    z-index: 2;   
+    position: relative;
 }
