@@ -6,7 +6,7 @@
 
 body {
   text-align: center;
-  display: inline-block;
+  display: inline-block;  
 }
 
 h1 {
@@ -40,3 +40,8 @@ button {
   top: -0.01rem;
 }
 
+span {
+    color: blue;
+    font-size: 1.25rem;
+    font-family: 'Creeper', serif;    
+}

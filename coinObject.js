@@ -6,8 +6,8 @@ const coin = {
   },
 
   toString: function() {
-    if (this.state === 0) return "Heads";
-    else return "Tails";
+    if (this.state === 0) return "Heads, ";
+    else return "Tails, ";
   },
 
   toHTML: function() {
@@ -25,10 +25,9 @@ function display20Flips() {
     let flipResult = document.createElement("span");
     flipResult.textContent = coin.toString();
     document.body.appendChild(flipResult);
-    document.body.appendChild(coin.toHTML());
   }
   return results;
-}
+};
 
 function display20Images() {
   const results = [];
@@ -37,10 +36,11 @@ function display20Images() {
     let displayHtml = coin.toHTML();
     document.body.appendChild(displayHtml);
   }
-}
+};
+
 function refreshPage() {
   window.location.reload();
-}
+};
 
 display20Flips();
 display20Images();
