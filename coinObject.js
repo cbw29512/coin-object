@@ -19,18 +19,15 @@ const coin = {
 };
 
 function display20Flips() {
-  const results = [];
   for (flips = 0; flips < 20; flips++) {
     coin.flip();
     let flipResult = document.createElement("span");
     flipResult.textContent = coin.toString();
     document.body.appendChild(flipResult);
   }
-  return results;
 };
 
 function display20Images() {
-  const results = [];
   for (display = 0; display < 20; display++) {
     coin.flip();
     let displayHtml = coin.toHTML();
